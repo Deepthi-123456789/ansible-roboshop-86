@@ -15,6 +15,7 @@
       instance_type: t2.micro
       image_id: "{{ ami_id }}"
       security_group: "{{ sg_id }}"
+      region: "{{ region }}"
     loop:
       - mongodb
       - mysql
