@@ -1,0 +1,22 @@
+- name : creating ec2 and r53 using Anasible
+  hosts : localhost
+  vars:
+    ami_id : ami-0220d79f3f480ecf5
+    sg_id : sg-09e62b6f3762029b2
+    zone_id : Z09532653LYSJAOMBYJTE
+    domain_name  : sitaram.icu
+  register : ec2_output
+  tasks:
+    - name : creating ec2 instance
+      ansible_builtin.ec2_instance:
+        name : "{{ item }}"
+        instance_type : t2.micro
+        image_id : "{{ ami_id }}"
+        security_groups : ["{{ sg_id }}"]
+      loop :
+      - mongodb
+      - mysql
+
+    - name : ec2 output
+      ansible.builtin.debug:
+       msg : "{{ ec2_output }}"
