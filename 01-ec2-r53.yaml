@@ -12,7 +12,7 @@
         name : "{{ item }}"
         instance_type : t2.micro
         image_id : "{{ ami_id }}"
-        security_groups : ["{{ sg_id }}"]
+        security_groups : "{{ sg_id }}"
       loop :
       - mongodb
       - mysql
