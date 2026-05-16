@@ -6,6 +6,7 @@
     sg_id: sg-09e62b6f3762029b2
     zone_id: Z09532653LYSJAOMBYJTE
     domain_name: sitaram.icu
+    region: us-east-1
 
   tasks:
   - name: Creating EC2 instances
