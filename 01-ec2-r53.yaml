@@ -19,6 +19,10 @@
       - mongodb
       - mysql
       - redis
+      - rabbitmq
+      - catalogue
+      - user
+      - cart
     register: ec2_output
 
 
