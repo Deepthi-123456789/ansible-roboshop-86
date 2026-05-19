@@ -23,9 +23,9 @@
       - catalogue
       - user
       - cart
-      # - shipping
-      # - payment
-      # - frontend
+      - shipping
+      - payment
+      - frontend
     register: ec2_output
 
 
