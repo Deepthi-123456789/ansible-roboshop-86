@@ -41,7 +41,7 @@
 
    - name : copy nginx configuration
      ansible.builtin.copy:
-      src : nignix.conf
+      src : nginx.conf
       dest : /etc/nginx/nginx.conf
 
    - name : restart nginx
