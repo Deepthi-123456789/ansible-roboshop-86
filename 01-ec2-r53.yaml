@@ -19,12 +19,13 @@
       - mongodb
       - mysql
       - redis
-      # - rabbitmq
-      # - catalogue
-      # - user
-      # - cart
+      - rabbitmq
+      - catalogue
+      - user
+      - cart
       # - shipping
       # - payment
+      # - frontend
     register: ec2_output
 
 
