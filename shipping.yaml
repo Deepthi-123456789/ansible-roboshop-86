@@ -11,7 +11,7 @@
       - mysql
    - name : install mysql libraries
      ansible.builtin.pip:
-      exexcutable : pip3.9
+      executable : pip3.9
       name : "{{ item }}"
      loop :
       - pymysql
