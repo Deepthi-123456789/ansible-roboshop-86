@@ -38,7 +38,7 @@
     
    - name : download the cart code
      ansible.builtin.get_url:
-      src :  https://roboshop-artifacts.s3.amazonaws.com/cart-v3.zip 
+      url :  https://roboshop-artifacts.s3.amazonaws.com/cart-v3.zip 
       dest : /tmp/cart.zip
 
    - name : unzip cart code
