@@ -38,8 +38,8 @@
     
    - name : download the user code
      ansible.builtin.get_url:
-      src :  https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip 
-      dest : /tmp/user.zip
+       src :  https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip 
+       dest : /tmp/user.zip
 
    - name : unzip user code
      ansible.builtin.unarchive:
